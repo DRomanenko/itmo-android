@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="img">#000</color>
+
+    <color name="foreground">#FFFFFF</color>
+    <color name="background">#ECECEC</color>
+
+    <color name="text_header">#00ACC1</color>
+    <color name="text_mid">#000</color>
+    <color name="text_footer">#828282</color>
+
+
+    <color name="colorPrimary">#E3F2FD</color>
+    <color name="colorPrimaryDark">#E3F2FD</color>
+    <color name="colorAccent">#E3F2FD</color>
+</resources>

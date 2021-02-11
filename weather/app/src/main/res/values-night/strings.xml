@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="sunday">Sunday</string>
+    <string name="saturday">Saturday</string>
+    <string name="friday">Friday</string>
+    <string name="thursday">Thursday</string>
+    <string name="sunny">Sunny</string>
+    <string name="hurricane">Hurricane</string>
+    <string name="rainy">Rainy</string>
+    <string name="windly">Windly</string>
+    <string name="thunder">Thunder</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunset">Sunset</string>
+    <string name="wind_flow">Wind Flow</string>
+    <string name="_78">78%</string>
+    <string name="_18_57">18:57</string>
+    <string name="_5_m_s">5 m/s</string>
+    <string name="saint_petersburg_ru_nvery_grumpy_clouds">Saint Petersburg, RU\nVery grumpy clouds</string>
+    <string name="d">Day</string>
+    <string name="weather">Weather</string>
+</resources>

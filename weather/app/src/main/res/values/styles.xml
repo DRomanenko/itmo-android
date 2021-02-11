@@ -1,0 +1,99 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/foreground</item>
+        <item name="colorPrimaryDark">@color/foreground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- TODO find a way how to change color and size -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap.header">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/text_footer</item>
+    </style>
+
+    <style name="TV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TV.header">
+        <item name="android:textColor">@color/text_header</item>
+    </style>
+
+    <style name="TV.footer">
+        <item name="android:textColor">@color/text_footer</item>
+    </style>
+
+    <style name="TV.place">
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:textColor">@color/text_mid</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TV.temp">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_mid</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+
+
+    <style name="IV">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:contentDescription">TODO</item>
+    </style>
+
+
+
+
+    <style name="LY">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/foreground</item>
+    </style>
+
+    <style name="LY.margin">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="LY.margin.top">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="LY.margin.bottom">
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+
+
+    <style name="line_ver">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/text_footer</item>
+    </style>
+
+    <style name="img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">230dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+</resources>

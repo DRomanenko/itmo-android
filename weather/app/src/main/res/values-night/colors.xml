@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="img">#FFFFFF</color>
+
+    <color name="foreground">#2B2B2B</color>
+    <color name="background">#3C3F41</color>
+
+    <color name="text_header">#3DDC84</color>
+    <color name="text_mid">#FFFFFF</color>
+    <color name="text_footer">#AFB1B3</color>
+
+    <color name="colorPrimary">#E3F2FD</color>
+    <color name="colorPrimaryDark">#E3F2FD</color>
+    <color name="colorAccent">#E3F2FD</color>
+</resources>

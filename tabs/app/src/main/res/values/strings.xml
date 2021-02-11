@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tabs</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="_0">0</string>
+    <string name="open_next">OPEN NEXT</string>
+</resources>

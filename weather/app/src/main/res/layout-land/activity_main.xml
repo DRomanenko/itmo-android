@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/foreground"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/wrap.header"
+            android:text="@string/weather"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/wrap"
+            android:text="@string/d"
+            android:textColor="@color/text_footer"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/dayNightSwitch"
+            app:layout_constraintEnd_toEndOf="@+id/dayNightSwitch"
+            app:layout_constraintStart_toStartOf="@+id/dayNightSwitch"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/dayNightSwitch"
+            style="@style/wrap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/backImg"
+        style="@style/img"
+        android:layout_height="190dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_today_grumpy_cloud_min"
+        app:layout_constraintBottom_toTopOf="@+id/temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/TV.temp"
+        android:text="@string/_13"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/backImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backImg" />
+
+
+    <TextView
+        android:id="@+id/place"
+        style="@style/TV.place"
+        android:text="@string/saint_petersburg_ru_nvery_grumpy_clouds"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/temp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="0" />
+
+    <LinearLayout
+        android:id="@+id/condition_header"
+        style="@style/LY.margin.top"
+        app:layout_constraintBottom_toTopOf="@+id/forecast_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backImg"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/_5_m_s" />
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/_18_57" />
+
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/_78" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/condition_img"
+        style="@style/LY.margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backImg"
+        app:layout_constraintTop_toBottomOf="@+id/condition_header">
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_condition_wind_min" />
+
+        <View style="@style/line_ver" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_condition_sunset_min" />
+
+        <View style="@style/line_ver" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_condition_droplet_min" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/condition_footer"
+        style="@style/LY.margin.bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backImg"
+        app:layout_constraintTop_toBottomOf="@+id/condition_img">
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/wind_flow" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/sunset" />
+
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/humidity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forecast_header"
+        style="@style/LY.margin.top"
+        app:layout_constraintBottom_toTopOf="@+id/forecast_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backImg">
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/cloudy" />
+
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/thunder" />
+
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/windly" />
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/rainy" />
+
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/hurricane" />
+
+        <TextView
+            style="@style/TV.header"
+            android:text="@string/sunny" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/forecast_img"
+        style="@style/LY.margin"
+        app:layout_constraintBottom_toTopOf="@+id/forecast_footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backImg">
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_forecast_cloud_min" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_forecast_cloud_wind_min" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_forecast_cloud_sun_min" />
+
+        <ImageView
+            style="@style/IV"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/ic_forecast_cloud_sun_rain" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_forecast_hurricane_min" />
+
+        <ImageView
+            style="@style/IV"
+            android:src="@drawable/ic_forecast_sun_min" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/forecast_footer"
+        style="@style/LY.margin.bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backImg"
+        app:layout_constraintTop_toBottomOf="@+id/condition_footer">
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/thursday" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/friday" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/saturday" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/sunday" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/monday" />
+
+        <TextView
+            style="@style/TV.footer"
+            android:text="@string/tuesday" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
