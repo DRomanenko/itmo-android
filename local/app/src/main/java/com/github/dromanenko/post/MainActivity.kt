@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Retrofit.instance.loadPosts(this, false)
+        Retrofit.instance.loadPosts()
         if (Retrofit.instance.postViewAdapter == null)
             Retrofit.instance.postViewAdapter = PostViewAdapter(mutableListOf())
         updateRW()
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 Retrofit.instance.insertAllPostsDB(it)
                 updateRW()
             }, {
-                Retrofit.instance.loadPosts(this, true)
+                Retrofit.instance.loadPosts()
                 updateRW()
             })
         }

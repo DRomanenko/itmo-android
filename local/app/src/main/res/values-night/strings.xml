@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Title</string>
+    <string name="enter_the_text_of_the_new_post">Enter the text of the new post</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="bn_new">New</string>
+    <string name="error_empty_db">No internet connection and local copy is empty</string>
+</resources>
