@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="new_post_tvs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="new_post_ets">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingHorizontal">10dp</item>
+    </style>
+</resources>
