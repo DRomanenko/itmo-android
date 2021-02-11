@@ -60,25 +60,12 @@ class Retrofit : Application() {
         }
     }
 
-    fun loadPosts(context: AppCompatActivity, flag: Boolean) {
+    fun loadPosts() {
         GlobalScope.launch {
             postViewAdapter?.apply {
                 posts = postDao.getAll() as MutableList<Post>
                 notifyDataSetChanged()
             }
-            if (flag)
-                context.runOnUiThread {
-                    Toast.makeText(
-                        context,
-                        getString(
-                            if (instance.postViewAdapter?.itemCount == 0)
-                                R.string.error_empty_db
-                            else
-                                R.string.error_lost_connection
-                        ),
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
         }
     }
 
