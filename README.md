@@ -1,4 +1,4 @@
-# Labs:
+# Labs
 1. [Калькулятор](calculator) 
 2. [Погода](weather)
 3. [Список контактов](contacts)
